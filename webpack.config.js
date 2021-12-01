@@ -8,6 +8,9 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  resolve: {
+    extensions: ['*', '.js']
+  },
   module: {
     rules: [
       {
@@ -21,7 +24,7 @@ module.exports = {
         loader: 'babel-loader'
       },*/
       {
-        test: /\.js$/,
+        test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
