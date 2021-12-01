@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "primevue": "2.1.0",
     "vue": "2.6.12"
   },
